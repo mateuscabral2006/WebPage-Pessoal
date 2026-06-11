@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus Cabral WebPage</title>
+    <style>
+        /* definindo paleta de cores */
+        :root {
+            --bg-deep-dark: #090F13;   /* Fundo principal */
+            --bg-card: #171F25;        /* Fundo dos blocos/cards */
+            --accent-muted: #752E2B;   /* Detalhes secundários / Bordas */
+            --accent-bright: #C90A02;  /* Cor de destaque / Botões / Hover */
+            --text-light: #F2EAB7;     /* Texto principal e títulos */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-deep-dark);
+            color: var(--text-light);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        /* ==========================================================================
+           CABEÇALHO (PERFIL)
+           ========================================================================== */
+        header {
+            margin-bottom: 40px;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 3px solid var(--accent-bright);
+            margin-bottom: 15px;
+            object-fit: cover;
+            box-shadow: 0 4px 15px rgba(201, 10, 2, 0.3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            color: var(--text-light);
+            opacity: 0.8;
+            font-weight: 300;
+        }
+
+        .links-container {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            margin-bottom: 40px;
+        }
+
+        .card-link {
+            background-color: var(--bg-card);
+            color: var(--text-light);
+            text-decoration: none;
+            padding: 18px 25px;
+            border-radius: 12px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* efeito ao passar o mouse */
+        .card-link:hover {
+            background-color: var(--accent-bright);
+            color: var(--bg-deep-dark); /* Troca o texto para a cor escura para dar contraste */
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(201, 10, 2, 0.4);
+            border-color: var(--text-light);
+        }
+
+        /*rodapé */
+        footer {
+            font-size: 0.85rem;
+            opacity: 0.5;
+            border-top: 1px solid var(--accent-muted);
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <img class="profile-img" src="minhafoto.jpeg" alt="#">
+            <h1>Mateus Cabral</h1>
+            <p class="subtitle">Sou estudante de Ciência da Computação, atualmente no 4° semestre.
+                Tenho formação em técnico em Desenvolvimento de Sistemas e busco uma oportunidade na
+                área de tecnologia para que eu consiga me desenvolver profissionalmente.
+            </p>
+        </header>
+
+        <main class="links-container">
+            <a href="https://github.com/mateuscabral2006" target="_blank" class="card-link">GitHub</a>
+            <a href="https://www.linkedin.com/in/mateus-cabral-3363562a8/" target="_blank" class="card-link">LinkedIn</a>
+            <a href="https://www.instagram.com/mateuscabral.dev?igsh=b3hvbngzMzh2eHpx" target="_blank" class="card-link">Instagram</a>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 Mateus Cabral. Todos os direitos reservados.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
